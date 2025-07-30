@@ -1669,9 +1669,9 @@
     "Progressive Jetpack": 344,
     "Night Vision Goggles": 307,
     "First Aid Kit": 309,
+    "First Aid Kit Capacity": 311,
+    "Progressive First Aid Kit": 312,
     "Protective Boots": 310,
-	"First Aid Kit Capacity": 311,
-	"Progressive First Aid Kit": 312,
     "Jump": 350,
     "Dive": 351,
     "Crouch": 352,
@@ -1870,5 +1870,5 @@
     "Dynamic15": 614,
     "Dynamic16": 615
   },
-  "checksum": "456fc28f6cdaa192b75e6674c57bd3e2c26fb9956c4225c955a84ac03ce079e6"
+  "checksum": "6bc585b768bea0e6590ebecd62072d27c4c58058edfe0fd86ad29464924be250"
 }

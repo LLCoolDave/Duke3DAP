@@ -2,7 +2,7 @@
   "game": "Duke Nukem 3D",
   "name": "Duke Nukem 3D",
   "game_id": 1,
-  "checksum": "456fc28f6cdaa192b75e6674c57bd3e2c26fb9956c4225c955a84ac03ce079e6",
+  "checksum": "6bc585b768bea0e6590ebecd62072d27c4c58058edfe0fd86ad29464924be250",
   "episodes": {
     "E1": {
       "name": "L.A. Meltdown",
@@ -7419,14 +7419,14 @@
       "capacity": 100,
       "max_capacity": 300
     },
-	"311": {
+    "311": {
       "name": "First Aid Kit Capacity",
       "type": "invcapacity",
       "persistent": true,
       "invnum": 9,
       "capacity": 35
     },
-	"312": {
+    "312": {
       "name": "Progressive First Aid Kit",
       "type": "progressive",
       "persistent": true,
