@@ -3,10 +3,11 @@ Duke Nukem 3D Randomizer for Archipelago
 
 Installation
 ------------
-
-* Get latest engine binary release from https://github.com/LLCoolDave/NBloodAP/releases or https://github.com/LLCoolDave/Duke3DAP/releases (rednukemAP.exe) (64bit Windows only for now)
-* Get DUKE3DAP.zip, DUKE3DAP.grpinfo from https://github.com/LLCoolDave/Duke3DAP/releases and put them in the same directory as rednukemAP.exe
-* Get the matching duke3d.apworld from https://github.com/LLCoolDave/Duke3DAP/releases as well.
+Cmdr_Scotty's Fork
+-------------
+* Get latest engine binary release from https://github.com/cmdrscotty/Duke3DAP (rednukemAP.exe) (64bit Windows only for now)
+* Get DUKE3DAP.zip, DUKE3DAP.grpinfo from https://github.com/cmdrscotty/Duke3DAP and put them in the same directory as rednukemAP.exe
+* Get the matching duke3d.apworld from https://github.com/cmdrscotty/Duke3DAP as well.
   * Make sure the DUKE3DAP.zip you use matches the duke3d.apworld used to generate a seed or the client will not connect
 * This randomizer requires a duke3d.grp and DUKE.RTS from the **1.5 Atomic Edition** release of Duke Nukem 3D
   * This is the most common distribution of the classic game and bundled with almost all digital release of the past two decades
