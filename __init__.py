@@ -194,6 +194,7 @@ class D3DWorld(World):
             "Jetpack": self.options.fuel_per_jetpack.value,
             "Scuba Gear": self.options.fuel_per_scuba_gear.value,
             "Steroids": self.options.fuel_per_steroids.value,
+            "First Aid Kit": self.options.fuel_per_first_aid_kit.value,
         }
         self.define_dynamic_item_props(
             "Jetpack", {"capacity": self.fuel_per_pickup["Jetpack"]}
@@ -213,7 +214,12 @@ class D3DWorld(World):
         self.define_dynamic_item_props(
             "Steroids Capacity", {"capacity": self.fuel_per_pickup["Steroids"]}
         )
-
+        self.define_dynamic_item_props(
+            "First Aid Kit", {"capacity": self.fuel_per_pickup["First Aid Kit"]}
+        )
+        self.define_dynamic_item_props(
+            "First Aid Kit Capacity", {"capacity": self.fuel_per_pickup["First Aid Kit"]}
+        )
         # Configure rules
         self.rules = Rules(self)
 
@@ -356,8 +362,8 @@ class D3DWorld(World):
                 "Buff Up": 1,
                 "Sturdy Armor": 2,
                 "Heavy Armor": 1,
-                "First Aid Kit": 2,
                 # Oh, you got lucky!
+                "First Aid Kit Capacity": 2,
                 "Shrinker Capacity": 1,
                 "Expander Capacity": 1,
                 "RPG Capacity": 1,
@@ -381,7 +387,6 @@ class D3DWorld(World):
                 "Medpak": 40,
                 "Armor": 30,
                 "Atomic Health": 28,
-                "First Aid Kit": 8,
                 "Protective Boots": 4,
                 "Ego Boost": 5,
                 "Buff Up": 3,
@@ -395,6 +400,7 @@ class D3DWorld(World):
                 "Devastator Capacity": 2,
                 "Steroids Capacity": 1,
                 "Jetpack Capacity": 1,
+                "First Aid Kit Capacity": 8,
             }
             trap_ratios = {
                 "Celebration Trap": 3,
@@ -425,11 +431,11 @@ class D3DWorld(World):
                 "Shrinker Capacity": 2,
                 "Expander Capacity": 2,
                 "Devastator Capacity": 1,
-                "First Aid Kit": 10,
                 "Protective Boots": 5,
                 "Steroids Capacity": 3,
                 "Uranium Health": 2,
                 # And some lucky additions!
+                "First Aid Kit Capacity": 10,
                 "Jetpack Capacity": 1,
                 "Scuba Gear Capacity": 1,
             }
@@ -462,9 +468,9 @@ class D3DWorld(World):
                 "Shrinker Capacity": 3,
                 "Expander Capacity": 3,
                 "Devastator Capacity": 2,
-                "First Aid Kit": 15,
                 "Protective Boots": 7,
                 "Steroids Capacity": 5,
+                "First Aid Kit Capacity": 15,
                 "Jetpack Capacity": 2,
                 "Scuba Gear Capacity": 2,
             }
@@ -503,24 +509,32 @@ class D3DWorld(World):
 
     DIFF_TO_REQ_MAPPING = {
         Difficulty.option_easy: {
+            "First Aid Kit": (600, 1200),
             "Jetpack": (400, 800),
             "Scuba Gear": (2000, 3500),
             "Steroids": (150, 300),
+            
         },
         Difficulty.option_medium: {
+            "First Aid Kit": (400, 800),
             "Jetpack": (300, 500),
             "Scuba Gear": (1250, 2000),
             "Steroids": (100, 200),
+            
         },
         Difficulty.option_hard: {
+            "First Aid Kit": (300, 500),
             "Jetpack": (200, 300),
             "Scuba Gear": (400, 1000),
             "Steroids": (50, 50),
+            
         },
         Difficulty.option_extreme: {
+            "First Aid Kit": (250, 300),
             "Jetpack": (200, 200),
             "Scuba Gear": (400, 400),
             "Steroids": (50, 50),
+            
         },
     }
 
@@ -744,6 +758,9 @@ class D3DWorld(World):
             useful_items += required
         useful_items += useful
         required, useful = self.generate_inventories("Steroids")
+        itempool += required
+        useful_items += useful
+        required, useful = self.generate_inventories("First Aid Kit")
         itempool += required
         useful_items += useful
 

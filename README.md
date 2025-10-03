@@ -22,6 +22,27 @@ in the rednukemAP.exe launcher window
 
 Simply enter your connection details and enjoy!
 
+It's not working, or I can't pick up AP items
+---------------------------------------------
+
+* Make sure that you are not unzipping DUKE3dAP.ZIP
+  * This needs to stay zipped and placed in the same location as rednukemAP.exe
+  <img width="483" height="284" alt="image" src="https://github.com/user-attachments/assets/9d508473-8d34-4e39-806f-ed2a4e78a2cf" />
+  
+  At bare minimum you should have 5 files in your folder:
+* DUKE.RTS
+* duke3d.grp
+* DUKE3DAP.grpinfo
+* DUKE3DAP.ZIP
+* rednukemAP.exe
+
+ <img width="224" height="201" alt="image" src="https://github.com/user-attachments/assets/4966e8b5-6479-42db-ae25-3042ebfe1126" />
+
+rednukemAP.exe will generate additional files after first launch, but those 5 are what is required for this to work and DUKE3DAP.ZIP must remain zipped, to not expand it or it will leave you very confused why it isn't actually working.
+  
+
+
+
 How the randomizer works
 ------------------------
 

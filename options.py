@@ -185,6 +185,13 @@ class ShuffleStartingLevels(Toggle):
     display_name = "Shuffle Starting Levels"
     default = False
 
+class FuelPerFirstAidKit(NamedRange):
+    """Amount of Fuel provided by each First Aid Kit collectible"""
+
+    display_name = "Fuel Per First Aid Kit"
+    range_start = 5
+    range_end = 50
+    default = 35
 
 class FuelPerJetpack(NamedRange):
     """Amount of fuel provided by each Jetpack collectible"""
@@ -263,6 +270,7 @@ class Duke3DOptions(PerGameCommonOptions):
     episode4: Episode4
     level_count: LevelCount
     shuffle_starting_levels: ShuffleStartingLevels
+    fuel_per_first_aid_kit: FuelPerFirstAidKit
     fuel_per_jetpack: FuelPerJetpack
     fuel_per_scuba_gear: FuelPerScubaGear
     fuel_per_steroids: FuelPerSteroids

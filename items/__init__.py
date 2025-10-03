@@ -572,6 +572,10 @@ inventory_items = {
 
 item_groups["Jetpack"] = {"Jetpack", "Progressive Jetpack"}
 item_groups["Jetpack Capacity"] = {"Jetpack", "Jetpack Capacity", "Progressive Jetpack"}
+
+item_groups["First Aid Kit"] = {"First Aid Kit", "Progressive First Aid Kit"}
+item_groups["First Aid Kit Capacity"] = {"First Aid Kit", "First Aid Kit Capacity", "Progressive First Aid Kit"}
+
 item_groups["Steroids"] = {"Steroids", "Progressive Steroids"}
 item_groups["Steroids Capacity"] = {
     "Steroids",
