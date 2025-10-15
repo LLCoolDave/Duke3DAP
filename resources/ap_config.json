@@ -7388,6 +7388,8 @@
     "303": {
       "name": "Holo Duke",
       "type": "inventory",
+      "persistent": true,
+      "unique": true,
       "invnum": 3,
       "capacity": 600
     },
@@ -7402,6 +7404,8 @@
     "307": {
       "name": "Night Vision Goggles",
       "type": "inventory",
+      "persistent": true,
+      "unique": true,
       "invnum": 7,
       "capacity": 400,
       "max_capacity": 1600
@@ -7415,6 +7419,7 @@
     "310": {
       "name": "Protective Boots",
       "type": "inventory",
+      "persistent": true,
       "invnum": 10,
       "capacity": 100,
       "max_capacity": 300

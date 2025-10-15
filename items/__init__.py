@@ -493,6 +493,8 @@ inventory_items = {
         net_id(303),
         "inventory",
         {"invnum": 3, "capacity": 600},
+        persistent=True,
+        unique=True,
     ),
     "Jetpack": ItemDef(
         "Jetpack",
@@ -531,6 +533,8 @@ inventory_items = {
         net_id(307),
         "inventory",
         {"invnum": 7, "capacity": 400, "max_capacity": 1600},
+        persistent=True,
+        unique=True,
     ),
     "First Aid Kit": ItemDef(
         "First Aid Kit",
@@ -560,11 +564,18 @@ inventory_items = {
         net_id(310),
         "inventory",
         {"invnum": 10, "capacity": 100, "max_capacity": 300},
+        persistent=True,
     ),
 }
 
 item_groups["Jetpack"] = {"Jetpack", "Progressive Jetpack"}
 item_groups["Jetpack Capacity"] = {"Jetpack", "Jetpack Capacity", "Progressive Jetpack"}
+item_groups["First Aid Kit"] = {"First Aid Kit", "Progressive First Aid Kit"}
+item_groups["First Aid Kit Capacity"] = {
+    "First Aid Kit",
+    "First Aid Kit Capacity",
+    "Progressive First Aid Kit",
+}
 item_groups["Steroids"] = {"Steroids", "Progressive Steroids"}
 item_groups["Steroids Capacity"] = {
     "Steroids",

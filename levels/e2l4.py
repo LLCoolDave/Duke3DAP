@@ -256,7 +256,9 @@ class E2L4(D3DLevel):
                 "Top Ledge Jetpack",
             ],
         )
-        self.connect(first_level, top_floor_ledge, r.can_sprint | r.jump)
+        self.connect(
+            first_level, top_floor_ledge, (r.can_sprint & r.can_jump) | r.jetpack(50)
+        )
 
         top_floor = self.region(
             "Top Floor", ["Top Floor Chaingun", "Top Floor Atomic Health", "Exit"]
