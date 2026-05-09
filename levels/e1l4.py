@@ -305,7 +305,7 @@ class E1L4(D3DLevel):
         )
         self.connect(canyon_return1, canyon_return2, r.explosives_count(2))
         canyon_return3 = self.region(
-            "Canyon Return Path 1", ["Secret Submarine Return Cave 3"]
+            "Canyon Return Path 3", ["Secret Submarine Return Cave 3"]
         )
         self.connect(canyon_return2, canyon_return3, r.explosives_count(3))
 

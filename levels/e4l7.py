@@ -181,7 +181,7 @@ class E4L7(D3DLevel):
         )
 
         cola_machine = self.region(
-            "Blue Dive Area",
+            "Cola Machine Area",
             [
                 "Cola Tripmine 1",
                 "Cola Tripmine 2",
